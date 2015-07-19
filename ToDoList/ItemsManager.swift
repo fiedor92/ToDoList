@@ -20,6 +20,6 @@ class ItemsManager: NSObject {
     var items = [item]() //variable holding array of items initialized with nothing
     
     func addItem(name: String, details: String) {
-        items.append(item(name: name, details: details))
+        items.append(item(name: name, details:  details))
     }
 }
