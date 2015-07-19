@@ -24,7 +24,27 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var detailsTextField: UITextField!
     @IBAction func addItemButton(sender: UIButton) {
-        itemsMgr.addItem(nameTextField.text, details: detailsTextField.text)
+        
+        if(nameTextField.text.isEmpty) {
+            displayAlert()
+        }
+        else {
+            itemsMgr.addItem(nameTextField.text, details: detailsTextField.text)
+        
+            nameTextField.text = ""
+            detailsTextField.text = ""
+            
+            self.tabBarController?.selectedIndex = 0
+        }
+        
+    }
+    
+    func displayAlert() {
+        let alert = UIAlertController(title: "Empty name!", message: "You cannot save item without a name", preferredStyle: UIAlertControllerStyle.Alert)
+    
+        alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default, handler: nil))
+        
+        self.presentViewController(alert, animated: true, completion: nil)
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
