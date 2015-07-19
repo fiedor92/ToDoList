@@ -37,7 +37,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
             self.tabBarController?.selectedIndex = 0
         }
         
-    }
+    }//.
     
     func displayAlert() {
         let alert = UIAlertController(title: "Empty name!", message: "You cannot save item without a name", preferredStyle: UIAlertControllerStyle.Alert)
