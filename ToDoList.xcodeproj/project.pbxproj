@@ -14,6 +14,7 @@
 		07DCC20B1B5BC9F0001B42C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DCC20A1B5BC9F0001B42C7 /* Images.xcassets */; };
 		07DCC20E1B5BC9F0001B42C7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07DCC20C1B5BC9F0001B42C7 /* LaunchScreen.xib */; };
 		07DCC21A1B5BC9F0001B42C7 /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DCC2191B5BC9F0001B42C7 /* ToDoListTests.swift */; };
+		07DCC2241B5BCFDB001B42C7 /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DCC2231B5BCFDB001B42C7 /* ItemsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		07DCC2131B5BC9F0001B42C7 /* ToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DCC2181B5BC9F0001B42C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07DCC2191B5BC9F0001B42C7 /* ToDoListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListTests.swift; sourceTree = "<group>"; };
+		07DCC2231B5BCFDB001B42C7 /* ItemsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				07DCC2031B5BC9F0001B42C7 /* FirstViewController.swift */,
 				07DCC2051B5BC9F0001B42C7 /* SecondViewController.swift */,
 				07DCC2071B5BC9F0001B42C7 /* Main.storyboard */,
+				07DCC2231B5BCFDB001B42C7 /* ItemsManager.swift */,
 				07DCC20A1B5BC9F0001B42C7 /* Images.xcassets */,
 				07DCC20C1B5BC9F0001B42C7 /* LaunchScreen.xib */,
 				07DCC1FF1B5BC9F0001B42C7 /* Supporting Files */,
@@ -217,6 +220,7 @@
 			files = (
 				07DCC2061B5BC9F0001B42C7 /* SecondViewController.swift in Sources */,
 				07DCC2021B5BC9F0001B42C7 /* AppDelegate.swift in Sources */,
+				07DCC2241B5BCFDB001B42C7 /* ItemsManager.swift in Sources */,
 				07DCC2041B5BC9F0001B42C7 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +351,7 @@
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -357,6 +362,7 @@
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
